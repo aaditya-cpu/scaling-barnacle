@@ -38,7 +38,7 @@
          </symbol>
       </svg>
     <header>
-    <div class="px-3 py-2 navbar-light" style="background-color: #25201b;">
+        <div class="px-3 py-2 navbar-light" style="background-color: #25201b;">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
@@ -55,7 +55,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link text-light">
+                            <a href="./customer.php" class="nav-link text-light">
                                 <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                               <use xlink:href="#speedometer2"/>
                            </svg> Dashboard
@@ -99,7 +99,78 @@
             </div>
             </div> -->
     </header>
-    </body>
+    <div class=" container col-10 formholder">
+        <h4 class="mb-3">Enquiry Form</h4>
+        <form>
+            <!-- Input type text -->
+            <div class="form-group">
+                <input type="text" class="form-control" name="input_name" id="input_name" placeholder="John Doe" required>
+                <small class="text-muted form-text">firstname last name</small>
+            </div>
+            <!-- Input text grid -->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label></label>
+                        <input type="text" name="mail_gird_1" id="mail_gird_1" class="form-control" placeholder="eMail" required>
+                        <small class="form-text text-muted">homes4in@gmail.com</small>
+                    </div>
+                    <div class="col">
+                        <label></label>
+                        <input type="text" name="cell_gird_2" id="cell_gird_2" class="form-control" placeholder="Contact Number" required>
+                        <small class="form-text text-muted">+91965012121</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Input text grid -->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="type_of_buildings">Type of building</label>
+                        <select class="custom-select text-muted form-text" name="type_of_buildings" id="type_of_buildings">
+                  <option value="Residential">Residential</option>
+                  <option value="Hospitals">Hospitals</option>
+                  <option value="Hotels">Hotels</option>
+                  <option value="Banks">Banks</option>
+                  <option value="Interior Designs">Interior Designs</option>
+                  <option value="Other">Other</option>
+               </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="No_ of_Floors">No. of Floors</label>
+                        <select class="custom-select text-muted form-text" name="No_ of_Floors" id="No_ of_Floors">
+                  <option value="1">Ground floor</option>
+                  <option value="2">1(G+1)</option>
+                  <option value="3">2(G+2)</option>
+                  <option value="4">3(G+3)</option>
+                  <option value="">4(G+4)</option>
+                  <option value="">5(G+5)</option>
+                  <option value="">6(G+6)</option>
+                  <option value="">7(G+7)</option>
+                  <option value="">8(G+8)</option>
+                  <option value="">Other</option>
+               </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Input type file -->
+            <div class="form-group">
+                <label for="File_form">Files</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="File_form" id="File_form" multiple>
+                    <label class="custom-file-label" for="File_form">Choose file</label>
+                </div>
+                <small class="text-muted form-text">upload plot sketch with all dimension and direction. If required interior design service, upload your floor plans</small>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="2" name="Description" id="Description" placeholder="Describe your requirement"></textarea>
+                <small class="text-muted form-text">Describe your requirement</small>
+            </div>
+            <button type="submit" class="btn btn-info btn-block btn-dark" name="button_id_11" id="button_id_11">submit</button>
+            <form>
+                <!-- select -->
+    </div>
+</body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
